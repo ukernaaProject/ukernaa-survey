@@ -25,21 +25,3 @@ themeButton.addEventListener('click', () => {
         themeButton.innerHTML = '<i class="fa-solid fa-moon"></i>'
     }
 })
-
-// Password toggle
-
-const showToggle = document.querySelector('.show-hide')
-
-const password = document.getElementById('password')
-
-showToggle.innerHTML = '<i class="fa-solid fa-eye-slash"></i>'
-
-function showHide() {
-    if (password.type === "password") {
-        password.setAttribute('type', 'text')
-        showToggle.innerHTML = '<i class="fa-solid fa-eye-slash"></i>'
-    } else {
-        password.setAttribute('type', 'password')
-        showToggle.innerHTML = '<i class="fa-solid fa-eye"></i>'
-    }
-}
