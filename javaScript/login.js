@@ -1,6 +1,5 @@
 const themeButton = document.querySelector('.theme-btn')
 const login = document.querySelector('.login')
-const signup = document.querySelector('.signup')
 const nav = document.getElementById('nav')
 const submitBtn = document.querySelector('.submit-btn')
 
@@ -13,7 +12,6 @@ themeButton.addEventListener('click', () => {
     login.classList.toggle('dark')
     input.classList.toggle('dark')
     submitBtn.classList.toggle('dark')
-    signup.classList.toggle('dark')
 
     if (document.body.classList.contains('dark'))
     {
