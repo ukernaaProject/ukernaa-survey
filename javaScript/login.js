@@ -10,7 +10,6 @@ themeButton.addEventListener('click', () => {
     document.body.classList.toggle('dark')
     nav.classList.toggle('dark')
     login.classList.toggle('dark')
-    input.classList.toggle('dark')
     submitBtn.classList.toggle('dark')
 
     if (document.body.classList.contains('dark'))
