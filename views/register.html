@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../stylesheet/style.css">
     <link rel="stylesheet" href="../stylesheet/other.css">
-    <link rel="stylesheet" href="../stylesheet/login.css">
+    <link rel="stylesheet" href="../stylesheet/register.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Login | Ukernaa</title>
+    <title>Register | Ukernaa</title>
 </head>
 <body>
     <nav id="nav">
@@ -30,16 +31,20 @@
             <button class="btn theme-btn"></button>
         </div>
     </nav>
-
-
-    <section class="login">
-        <div class="login-container">
-            <div class="login-form">
-                <div class="login-heading">
-                    <h1>Login</h1>
+    <section class="signup">
+        <div class="signup-form">
+            <div class="signup-container">
+                <div class="signup-heading">
+                    <h1>Sign Up</h1>
                 </div>
                 <form action="" method="POST">
                     <div class="form-group">
+                        <label for="name">Name</label>
+                        
+                        <div class="input">
+                            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                        </div>
+                        
                         <label for="email">Email</label>
                         
                         <div class="input">
@@ -50,19 +55,22 @@
                         
                         <div class="input">
                             <input type="password" id="password" placeholder="Enter Your Password">
+                        </div>
+                        
+                        <label>Confirm Password</label>
+                        
+                        <div class="input">
+                            <input type="password" id="password" placeholder="Enter Your Password">
                             <span class="show-hide" onclick="showHide()"></span>
                         </div>
-
-                        <div class="login-btn">
-                            <button class="btn submit-btn" type="submit">Login</button>
+    
+                        <div class="signup-btn">
+                            <button class="btn submit-btn" type="submit">Register</button>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
     </section>
-
-
-
-    <script src="../javaScript/login.js"></script>
+    <script src="../javaScript/signup.js"></script>
 </body>
 </html>

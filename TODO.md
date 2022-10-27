@@ -19,8 +19,7 @@
 ## Login System
 
 * Google OAuth
-* Login Page
-* Register Page
+* Login and Register Page
 
 ## Admin Panel
 
