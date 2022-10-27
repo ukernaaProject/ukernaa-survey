@@ -19,14 +19,24 @@
 
 :root
 {
-    /* Colors */
+    /* Common Colors */
     --primary-color: #926EF5;
     --hero-gradient-color-1: #130047;
     --hero-gradient-color-2: #5C2A5F;
     --hero-gradient-color-3: #ED7D8F;
-
+    
     --nav-btn-gradient-color-1: #EF7796;
     --nav-btn-gradient-color-2: #E4A577;
+    
+    /* Light Theme Colors */
+    --light-background-color: #f5f5f5;
+    --light-text-color: #212121;
+    
+    /* Dark Theme Colors */
+    --dark-background-color: #212121;
+    --light-text-color: #f5f5f5;
+
+
 
     /* Font Family */
     --Roboto: 'Roboto', sans-serif;
@@ -42,14 +52,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--Roboto);
 
 }
 
-/* body
+body
 {
+    font-family: var(--Roboto);
+    background: var(--light-background-color);
+}
 
-} */
+body.dark
+{
+    background: var(--dark-background-color);
+}
 
 
 /* Buttons */
@@ -99,6 +114,7 @@ nav
     position: fixed;
     top: 0;
     z-index: 999;
+    padding-top: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -147,7 +163,7 @@ nav .nav-right ul li
 nav .nav-right ul li a
 {
     text-decoration: none;
-    color: #fff;
+    color: var(--light-background-color);
     font-size: 1.2rem;
     font-weight: 500;
     font-family: var(--Roboto-Mono);
@@ -190,7 +206,7 @@ nav .nav-right a
 {
     position: absolute;
     text-align: center;
-    color: #fff;
+    color: var(--light-background-color);
     font-size: 4rem;
 }
 
